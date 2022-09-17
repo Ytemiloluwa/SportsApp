@@ -16,6 +16,8 @@
 		A7ED7E3428D63B810071C488 /* SportsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ED7E3328D63B810071C488 /* SportsAppTests.swift */; };
 		A7ED7E3E28D63B810071C488 /* SportsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ED7E3D28D63B810071C488 /* SportsAppUITests.swift */; };
 		A7ED7E4028D63B810071C488 /* SportsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ED7E3F28D63B810071C488 /* SportsAppUITestsLaunchTests.swift */; };
+		A7FAB8B028D6580500A74DDC /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8AF28D6580500A74DDC /* ColorExt.swift */; };
+		A7FAB8B228D65FA200A74DDC /* SigninWithApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8B128D65FA200A74DDC /* SigninWithApple.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		A7ED7E3928D63B810071C488 /* SportsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7ED7E3D28D63B810071C488 /* SportsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsAppUITests.swift; sourceTree = "<group>"; };
 		A7ED7E3F28D63B810071C488 /* SportsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A7FAB8AF28D6580500A74DDC /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
+		A7FAB8B128D65FA200A74DDC /* SigninWithApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninWithApple.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			children = (
 				A70BF73A28D647D500FBA957 /* Constant.swift */,
 				A70BF73C28D647E700FBA957 /* ActivityData.swift */,
+				A7FAB8B128D65FA200A74DDC /* SigninWithApple.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -107,6 +112,9 @@
 		A7ED7E2128D63B7F0071C488 /* SportsApp */ = {
 			isa = PBXGroup;
 			children = (
+				A7FAB8AE28D6579200A74DDC /* Views */,
+				A7FAB8AD28D6570300A74DDC /* Extension */,
+				A7FAB8AC28D6567300A74DDC /* Screens */,
 				A70BF73928D647B200FBA957 /* Data */,
 				A7ED7E2228D63B7F0071C488 /* SportsAppApp.swift */,
 				A7ED7E2428D63B7F0071C488 /* ContentView.swift */,
@@ -139,6 +147,30 @@
 				A7ED7E3F28D63B810071C488 /* SportsAppUITestsLaunchTests.swift */,
 			);
 			path = SportsAppUITests;
+			sourceTree = "<group>";
+		};
+		A7FAB8AC28D6567300A74DDC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Screens;
+			path = Data/Screens;
+			sourceTree = "<group>";
+		};
+		A7FAB8AD28D6570300A74DDC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A7FAB8AF28D6580500A74DDC /* ColorExt.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A7FAB8AE28D6579200A74DDC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			path = "Preview Content/Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A70BF73D28D647E700FBA957 /* ActivityData.swift in Sources */,
+				A7FAB8B028D6580500A74DDC /* ColorExt.swift in Sources */,
+				A7FAB8B228D65FA200A74DDC /* SigninWithApple.swift in Sources */,
 				A7ED7E2528D63B7F0071C488 /* ContentView.swift in Sources */,
 				A7ED7E2328D63B7F0071C488 /* SportsAppApp.swift in Sources */,
 				A70BF73B28D647D500FBA957 /* Constant.swift in Sources */,
