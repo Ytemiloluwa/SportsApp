@@ -20,6 +20,9 @@
 		A7FAB8B228D65FA200A74DDC /* SigninWithApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8B128D65FA200A74DDC /* SigninWithApple.swift */; };
 		A7FAB8B428D6620D00A74DDC /* SelectedSports.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8B328D6620D00A74DDC /* SelectedSports.swift */; };
 		A7FAB8B628D6624700A74DDC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8B528D6624700A74DDC /* Model.swift */; };
+		A7FAB8B828D6639B00A74DDC /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8B728D6639B00A74DDC /* LoginScreen.swift */; };
+		A7FAB8BA28D665C200A74DDC /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8B928D665C200A74DDC /* PickerView.swift */; };
+		A7FAB8BE28D66CF200A74DDC /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8BD28D66CF200A74DDC /* BarChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		A7FAB8B128D65FA200A74DDC /* SigninWithApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninWithApple.swift; sourceTree = "<group>"; };
 		A7FAB8B328D6620D00A74DDC /* SelectedSports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSports.swift; sourceTree = "<group>"; };
 		A7FAB8B528D6624700A74DDC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A7FAB8B728D6639B00A74DDC /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		A7FAB8B928D665C200A74DDC /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		A7FAB8BD28D66CF200A74DDC /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,8 @@
 		A7FAB8AC28D6567300A74DDC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				A7FAB8B728D6639B00A74DDC /* LoginScreen.swift */,
+				A7FAB8B928D665C200A74DDC /* PickerView.swift */,
 			);
 			name = Screens;
 			path = Data/Screens;
@@ -174,6 +182,7 @@
 		A7FAB8AE28D6579200A74DDC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A7FAB8BD28D66CF200A74DDC /* BarChartView.swift */,
 			);
 			name = Views;
 			path = "Preview Content/Views";
@@ -311,12 +320,15 @@
 			files = (
 				A70BF73D28D647E700FBA957 /* ActivityData.swift in Sources */,
 				A7FAB8B428D6620D00A74DDC /* SelectedSports.swift in Sources */,
+				A7FAB8B828D6639B00A74DDC /* LoginScreen.swift in Sources */,
 				A7FAB8B028D6580500A74DDC /* ColorExt.swift in Sources */,
 				A7FAB8B228D65FA200A74DDC /* SigninWithApple.swift in Sources */,
 				A7ED7E2528D63B7F0071C488 /* ContentView.swift in Sources */,
 				A7ED7E2328D63B7F0071C488 /* SportsAppApp.swift in Sources */,
 				A70BF73B28D647D500FBA957 /* Constant.swift in Sources */,
+				A7FAB8BA28D665C200A74DDC /* PickerView.swift in Sources */,
 				A7FAB8B628D6624700A74DDC /* Model.swift in Sources */,
+				A7FAB8BE28D66CF200A74DDC /* BarChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
