@@ -11,6 +11,8 @@ import SwiftUI
 struct PickerView: View {
     
     @State private var selected = 0
+    @State var selectedView: [any View] = [ExerciseView(), CardioView(), WorkOutView()]
+    
     var body: some View {
         
         VStack {
@@ -24,13 +26,27 @@ struct PickerView: View {
             }.pickerStyle(SegmentedPickerStyle())
                 .padding()
             
-            if selected == 0 {
+            GeometryReader { geometry in
                 
-                CardioView()
+                ZStack(alignment: .top){
+                    
+                    Color.black.edgesIgnoringSafeArea(.all)
+                    
+                    if selected == 0 {
+                        
+                        ExerciseView()
+                    }
+                    else if selected == 1 {
+                        
+                        WorkOutView()
+                    }
+                    else {
+                        
+                        CardioView()
+                    }
+                }
             }
-            
         }
-        
     }
 }
 struct PickerView_Previews: PreviewProvider {
