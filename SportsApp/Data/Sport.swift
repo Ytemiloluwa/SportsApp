@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct Sport: Identifiable, Hashable {
+struct Sport: Identifiable, Equatable, Hashable{
     
-    var id = UUID()
-    var images: String
+    let id = UUID()
+    var image: String
     var name: String
     // var description: String
 }

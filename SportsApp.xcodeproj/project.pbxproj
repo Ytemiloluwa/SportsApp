@@ -10,6 +10,7 @@
 		A70BF73B28D647D500FBA957 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70BF73A28D647D500FBA957 /* Constant.swift */; };
 		A70BF73D28D647E700FBA957 /* ActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70BF73C28D647E700FBA957 /* ActivityData.swift */; };
 		A7ECDD5C28D70F1800D161D4 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ECDD5B28D70F1800D161D4 /* DetailsView.swift */; };
+		A7ECDD5E28D7809500D161D4 /* SelectedSport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ECDD5D28D7809500D161D4 /* SelectedSport.swift */; };
 		A7ED7E2328D63B7F0071C488 /* SportsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ED7E2228D63B7F0071C488 /* SportsAppApp.swift */; };
 		A7ED7E2528D63B7F0071C488 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ED7E2428D63B7F0071C488 /* ContentView.swift */; };
 		A7ED7E2728D63B800071C488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7ED7E2628D63B800071C488 /* Assets.xcassets */; };
@@ -19,8 +20,8 @@
 		A7ED7E4028D63B810071C488 /* SportsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ED7E3F28D63B810071C488 /* SportsAppUITestsLaunchTests.swift */; };
 		A7FAB8B028D6580500A74DDC /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8AF28D6580500A74DDC /* ColorExt.swift */; };
 		A7FAB8B228D65FA200A74DDC /* SigninWithApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8B128D65FA200A74DDC /* SigninWithApple.swift */; };
-		A7FAB8B428D6620D00A74DDC /* SelectedSports.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8B328D6620D00A74DDC /* SelectedSports.swift */; };
-		A7FAB8B628D6624700A74DDC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8B528D6624700A74DDC /* Model.swift */; };
+		A7FAB8B428D6620D00A74DDC /* SportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8B328D6620D00A74DDC /* SportsView.swift */; };
+		A7FAB8B628D6624700A74DDC /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8B528D6624700A74DDC /* Sport.swift */; };
 		A7FAB8B828D6639B00A74DDC /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8B728D6639B00A74DDC /* LoginScreen.swift */; };
 		A7FAB8BA28D665C200A74DDC /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8B928D665C200A74DDC /* PickerView.swift */; };
 		A7FAB8BE28D66CF200A74DDC /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8BD28D66CF200A74DDC /* BarChartView.swift */; };
@@ -50,6 +51,7 @@
 		A70BF73A28D647D500FBA957 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		A70BF73C28D647E700FBA957 /* ActivityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityData.swift; sourceTree = "<group>"; };
 		A7ECDD5B28D70F1800D161D4 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		A7ECDD5D28D7809500D161D4 /* SelectedSport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSport.swift; sourceTree = "<group>"; };
 		A7ED7E1F28D63B7F0071C488 /* SportsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7ED7E2228D63B7F0071C488 /* SportsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsAppApp.swift; sourceTree = "<group>"; };
 		A7ED7E2428D63B7F0071C488 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,8 +64,8 @@
 		A7ED7E3F28D63B810071C488 /* SportsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A7FAB8AF28D6580500A74DDC /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
 		A7FAB8B128D65FA200A74DDC /* SigninWithApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninWithApple.swift; sourceTree = "<group>"; };
-		A7FAB8B328D6620D00A74DDC /* SelectedSports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSports.swift; sourceTree = "<group>"; };
-		A7FAB8B528D6624700A74DDC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A7FAB8B328D6620D00A74DDC /* SportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsView.swift; sourceTree = "<group>"; };
+		A7FAB8B528D6624700A74DDC /* Sport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
 		A7FAB8B728D6639B00A74DDC /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		A7FAB8B928D665C200A74DDC /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		A7FAB8BD28D66CF200A74DDC /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
@@ -102,9 +104,10 @@
 			children = (
 				A70BF73A28D647D500FBA957 /* Constant.swift */,
 				A70BF73C28D647E700FBA957 /* ActivityData.swift */,
+				A7FAB8B328D6620D00A74DDC /* SportsView.swift */,
 				A7FAB8B128D65FA200A74DDC /* SigninWithApple.swift */,
-				A7FAB8B328D6620D00A74DDC /* SelectedSports.swift */,
-				A7FAB8B528D6624700A74DDC /* Model.swift */,
+				A7FAB8B528D6624700A74DDC /* Sport.swift */,
+				A7ECDD5D28D7809500D161D4 /* SelectedSport.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -332,7 +335,7 @@
 			files = (
 				A7FAB8C028D6707100A74DDC /* CardioView.swift in Sources */,
 				A70BF73D28D647E700FBA957 /* ActivityData.swift in Sources */,
-				A7FAB8B428D6620D00A74DDC /* SelectedSports.swift in Sources */,
+				A7FAB8B428D6620D00A74DDC /* SportsView.swift in Sources */,
 				A7FAB8B828D6639B00A74DDC /* LoginScreen.swift in Sources */,
 				A7FAB8B028D6580500A74DDC /* ColorExt.swift in Sources */,
 				A7FAB8B228D65FA200A74DDC /* SigninWithApple.swift in Sources */,
@@ -342,7 +345,8 @@
 				A7FAB8BA28D665C200A74DDC /* PickerView.swift in Sources */,
 				A7FAB8C228D6707F00A74DDC /* WorkOutView.swift in Sources */,
 				A7ECDD5C28D70F1800D161D4 /* DetailsView.swift in Sources */,
-				A7FAB8B628D6624700A74DDC /* Model.swift in Sources */,
+				A7FAB8B628D6624700A74DDC /* Sport.swift in Sources */,
+				A7ECDD5E28D7809500D161D4 /* SelectedSport.swift in Sources */,
 				A7FAB8C428D6708F00A74DDC /* ExerciseView.swift in Sources */,
 				A7FAB8BE28D66CF200A74DDC /* BarChartView.swift in Sources */,
 			);

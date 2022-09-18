@@ -8,56 +8,39 @@
 import SwiftUI
 
 struct DetailsView: View {
+    
+    let sportData: Sport
+    @EnvironmentObject private var selectedSport: SelectedSport
+    
     var body: some View {
-        ZStack {
+        
+        VStack {
             
-            Color.white.edgesIgnoringSafeArea(.all)
+            Image(sportData.image)
+                .renderingMode(.original)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 300, height: 300)
+                .edgesIgnoringSafeArea(.top)
             
-            VStack {
-                HStack(spacing: -14){
-                    
-                    Image(systemName: "arrow.left")
-                        .resizable()
-                        .frame(width: 21, height: 21)
-                        .foregroundColor(.black)
-                    
-                    Spacer()
-                    Text("Workout")
-                        .foregroundColor(.black)
-                        .font(.system(size: 23, weight: Font.Weight.medium, design: Font.Design.default))
-                    
-                    Spacer()
-                    
-                }.padding(.horizontal)
-                    .padding(.vertical, 3)
-                
-                ZStack {
-                    
-                    Image("Exercise")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                    
-                }
-                
-                HStack {
-                    
-                    ExtractedView()
-                }
-                
-                PickerView()
-            }
-        }
+            ExtractedView()
+            
+            PickerView()
+            
+        }.edgesIgnoringSafeArea(.top)
     }
+  
 }
 
-struct DetailsView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailsView()
-    }
-}
+//struct DetailsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailsView(sports: <#Sport#>)
+//    }
+//}
 
 struct ExtractedView: View {
     var body: some View {
+        
         HStack {
             
             Text("Activity")
@@ -66,33 +49,16 @@ struct ExtractedView: View {
             
             Spacer()
             
-            Button {
+            NavigationLink(destination: CardioView()) {
                 
-                //
-            } label: {
                 Text("More")
                     .foregroundColor(Color.white)
                     .padding(11)
                     .background(Color.black)
                     .clipShape(Capsule())
-                
             }
             
         }.padding(10)
+        
     }
-    
-    
-    //class Host: UIHostingController<ContentView> {
-    //
-    //
-    //    override var preferredStatusBarStyle: UIStatusBarStyle {
-    //
-    //        return.lightContent
-    //    }
-    //
-    //    override var prefersHomeIndicatorAutoHidden: Bool {
-    //
-    //        return true
-    //    }
-    //}
 }
