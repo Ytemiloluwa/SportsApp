@@ -14,13 +14,15 @@ struct ExerciseView: View {
         GeometryReader { geometry in
             
             VStack {
-                 Spacer(minLength: 10)
+                 Spacer(minLength: 0)
                     .frame(width: geometry.size.width, height: 10)
+                    .padding(.top, 20)
                 
                 self.ExerciseCharts()
-                .padding(.top, 50 * 10)
+              .padding(.bottom, 50 * 10)
                 
             }
+            .padding(.bottom, 50)
         }
     }
     

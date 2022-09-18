@@ -14,16 +14,18 @@ struct WorkOutView: View {
         GeometryReader { geometry in
             
             VStack {
-                Spacer(minLength: 10)
+                 Spacer(minLength: 0)
                     .frame(width: geometry.size.width, height: 10)
+                    .padding(.top, 20)
                 
                 self.WorkOutCharts()
-                    .padding(.top, 50 * 10)
+              .padding(.bottom, 50 * 10)
                 
             }
+            .padding(.bottom, 50)
         }
     }
-    
+
     func WorkOutCharts() -> some View {
         // WorkOut Chart
         BarChartView(
@@ -38,11 +40,8 @@ struct WorkOutView: View {
             barStartColor: Color.exerciseBarStartColor,
             barEndColor: Color.exerciseBarEndColor
         )
-        .padding([.bottom], 25)
     }
 }
-
-
 struct WorkOutView_Previews: PreviewProvider {
     static var previews: some View {
         WorkOutView()

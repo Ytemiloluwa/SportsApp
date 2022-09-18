@@ -25,7 +25,7 @@ struct BarChartView: View {
         VStack(alignment: .leading, spacing: 0) {
             VStack(alignment: .leading, spacing: 0) {
                 Text(title)
-                    .font(Font.system(size: 18, weight: .regular, design: .default))
+                    .font(Font.system(size: 30, weight: .regular, design: .default))
                     .kerning(0.05)
                     .foregroundColor(Color.white)
                     (

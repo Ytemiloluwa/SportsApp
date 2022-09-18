@@ -11,8 +11,6 @@ import SwiftUI
 struct PickerView: View {
     
     @State private var selected = 0
-    @State var selectedView: [any View] = [ExerciseView(), CardioView(), WorkOutView()]
-    
     var body: some View {
         
         VStack {
