@@ -30,10 +30,8 @@ struct LoginScreen: View {
                 SigninWithApple()
                     .frame(width: 100, height: 40, alignment: .center)
                 
-                
             }.padding(.vertical, 30)
         }
-        
     }
 }
 

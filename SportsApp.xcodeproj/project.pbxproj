@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A70BF73B28D647D500FBA957 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70BF73A28D647D500FBA957 /* Constant.swift */; };
 		A70BF73D28D647E700FBA957 /* ActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70BF73C28D647E700FBA957 /* ActivityData.swift */; };
+		A7ECDD5C28D70F1800D161D4 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ECDD5B28D70F1800D161D4 /* DetailsView.swift */; };
 		A7ED7E2328D63B7F0071C488 /* SportsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ED7E2228D63B7F0071C488 /* SportsAppApp.swift */; };
 		A7ED7E2528D63B7F0071C488 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ED7E2428D63B7F0071C488 /* ContentView.swift */; };
 		A7ED7E2728D63B800071C488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7ED7E2628D63B800071C488 /* Assets.xcassets */; };
@@ -23,6 +24,9 @@
 		A7FAB8B828D6639B00A74DDC /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8B728D6639B00A74DDC /* LoginScreen.swift */; };
 		A7FAB8BA28D665C200A74DDC /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8B928D665C200A74DDC /* PickerView.swift */; };
 		A7FAB8BE28D66CF200A74DDC /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8BD28D66CF200A74DDC /* BarChartView.swift */; };
+		A7FAB8C028D6707100A74DDC /* CardioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8BF28D6707100A74DDC /* CardioView.swift */; };
+		A7FAB8C228D6707F00A74DDC /* WorkOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8C128D6707F00A74DDC /* WorkOutView.swift */; };
+		A7FAB8C428D6708F00A74DDC /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAB8C328D6708F00A74DDC /* ExerciseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,7 @@
 /* Begin PBXFileReference section */
 		A70BF73A28D647D500FBA957 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		A70BF73C28D647E700FBA957 /* ActivityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityData.swift; sourceTree = "<group>"; };
+		A7ECDD5B28D70F1800D161D4 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		A7ED7E1F28D63B7F0071C488 /* SportsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7ED7E2228D63B7F0071C488 /* SportsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsAppApp.swift; sourceTree = "<group>"; };
 		A7ED7E2428D63B7F0071C488 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +67,9 @@
 		A7FAB8B728D6639B00A74DDC /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		A7FAB8B928D665C200A74DDC /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		A7FAB8BD28D66CF200A74DDC /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		A7FAB8BF28D6707100A74DDC /* CardioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardioView.swift; sourceTree = "<group>"; };
+		A7FAB8C128D6707F00A74DDC /* WorkOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutView.swift; sourceTree = "<group>"; };
+		A7FAB8C328D6708F00A74DDC /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +191,10 @@
 			isa = PBXGroup;
 			children = (
 				A7FAB8BD28D66CF200A74DDC /* BarChartView.swift */,
+				A7FAB8C128D6707F00A74DDC /* WorkOutView.swift */,
+				A7FAB8BF28D6707100A74DDC /* CardioView.swift */,
+				A7FAB8C328D6708F00A74DDC /* ExerciseView.swift */,
+				A7ECDD5B28D70F1800D161D4 /* DetailsView.swift */,
 			);
 			name = Views;
 			path = "Preview Content/Views";
@@ -318,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7FAB8C028D6707100A74DDC /* CardioView.swift in Sources */,
 				A70BF73D28D647E700FBA957 /* ActivityData.swift in Sources */,
 				A7FAB8B428D6620D00A74DDC /* SelectedSports.swift in Sources */,
 				A7FAB8B828D6639B00A74DDC /* LoginScreen.swift in Sources */,
@@ -327,7 +340,10 @@
 				A7ED7E2328D63B7F0071C488 /* SportsAppApp.swift in Sources */,
 				A70BF73B28D647D500FBA957 /* Constant.swift in Sources */,
 				A7FAB8BA28D665C200A74DDC /* PickerView.swift in Sources */,
+				A7FAB8C228D6707F00A74DDC /* WorkOutView.swift in Sources */,
+				A7ECDD5C28D70F1800D161D4 /* DetailsView.swift in Sources */,
 				A7FAB8B628D6624700A74DDC /* Model.swift in Sources */,
+				A7FAB8C428D6708F00A74DDC /* ExerciseView.swift in Sources */,
 				A7FAB8BE28D66CF200A74DDC /* BarChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

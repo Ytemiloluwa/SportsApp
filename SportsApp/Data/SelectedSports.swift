@@ -12,8 +12,8 @@ struct selectedsports: View {
     
      let columns = [GridItem(.adaptive(minimum: 180))]
     
-    @State private var images = [Sport(images: "Gym", name: "Gym")
-                                 ,Sport(images: "Exercise", name: "Exercise"), Sport(images: "Football", name: "Football"),Sport(images: "Yoga", name: "Yoga"),Sport(images: "Athletics", name: "Athletics"),Sport(images: "Tennis", name: "Tennis"),Sport(images: "baseball", name: "Baseball"), Sport(images: "basketball", name: "Basketball"), Sport(images: "Fitness", name: "Fitness")]
+    @State private var sport = [Sport(images: "Gym", name: "Gym")
+                                 ,Sport(images: "Exercise", name: "Exercise"),Sport(images: "Yoga", name: "Yoga"),Sport(images: "Athletics", name: "Athletics"),Sport(images: "Tennis", name: "Tennis"),Sport(images: "baseball", name: "Baseball"), Sport(images: "basketball", name: "Basketball"), Sport(images: "Fitness", name: "Fitness")]
 
     var body: some View {
         
@@ -37,7 +37,7 @@ struct selectedsports: View {
                 
                 LazyVGrid(columns: columns, spacing: 10) {
                     
-                    ForEach(images, id: \.self) { i in
+                    ForEach(sport, id: \.self) { i in
                         
                         
                         Button {

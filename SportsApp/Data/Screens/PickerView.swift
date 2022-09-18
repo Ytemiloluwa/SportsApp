@@ -11,31 +11,28 @@ import SwiftUI
 struct PickerView: View {
     
     @State private var selected = 0
-    @State private var selectedsport: [String] = ["Exercise", "WorkOut", "Cardio"]
-    
     var body: some View {
         
-        Picker(selection: $selected, label: Text("Selectedsport")){
+        VStack {
             
-            ForEach(0..<selectedsport.count, id: \.self) {
+            Picker(selection: $selected, label: Text("")){
+            
+                Text("Exercise").tag(0)
+                Text("WorkOut").tag(1)
+                Text("Cardio").tag(2)
+            
+            }.pickerStyle(SegmentedPickerStyle())
+                .padding()
+            
+            if selected == 0 {
                 
-                
-                
-                Text(selectedsport[$0]).tag($0)
-                    .foregroundColor(.blue)
-                
-                
+                CardioView()
             }
             
-        }.pickerStyle(SegmentedPickerStyle())
-            .background(Color.white)
-            .padding()
+        }
         
     }
-    
 }
-
-
 struct PickerView_Previews: PreviewProvider {
     static var previews: some View {
         
