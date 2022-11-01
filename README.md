@@ -1,4 +1,5 @@
-# #SportsApp
+#SportsApp
+
 SportsApp with SwiftUI
 
 ![Sports1](https://user-images.githubusercontent.com/91268094/190921922-4943a25e-8f7d-4a86-a1be-bb07c7f8e229.png)
