@@ -8,28 +8,29 @@
 import Foundation
 import SwiftUI
 
-struct SportsView: View {
+struct SportsView<Destination: View>: View {
     
-    let columns = [GridItem(.adaptive(minimum: 180))]
-    let sportData: Sport
-    @EnvironmentObject private var selectedSport: SelectedSport
+    let columns: [GridItem] = Array(repeating: .init(.adaptive(minimum: 180), spacing: 10), count: 2)
+    var sportData: SportItem
+    var destination: Destination
     
-    private let data: [Sport] =
-    [Sport(image: "Gym", name: "Fitness")
-                       ,Sport(image: "Exercise", name: "Exercise"),Sport(image: "Yoga", name: "Yoga"),Sport(image: "Athletics", name: "Athletics"),Sport(image: "Tennis", name: "Tennis"),Sport(image: "baseball", name: "Baseball"), Sport(image: "basketball", name: "Basketball"), Sport(image: "Fitness", name: "Gym")]
-
-    
+    init(sportData: SportItem, @ViewBuilder destination: (() -> Destination)) {
+        
+        self.sportData = sportData
+        self.destination = destination()
+    }
+   
     var body: some View {
         
         NavigationView {
             
-            ScrollView {
+            ScrollView(.vertical, showsIndicators: true) {
                 
-                LazyVGrid(columns: columns, spacing: 10) {
+                LazyVGrid(columns: columns, alignment: .center, spacing: 10) {
 
-                    ForEach(self.data) { sport in
+                    ForEach(SportItem.allSports) { sport in
                         
-                        NavigationLink(destination: DetailsView(sportData: sportData)) {
+                        NavigationLink(destination: destination){
                         
                             VStack {
                                 
@@ -37,6 +38,7 @@ struct SportsView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
+                                   
                                 
                                 Text(sport.name)
                                     .font(.system(size: 20, weight: Font.Weight.medium, design: Font.Design.default))
@@ -55,8 +57,12 @@ struct SportsView: View {
 }
 struct SportsView_Previews: PreviewProvider {
     static var previews: some View {
-        SportsView(sportData: Sport.init(image: "Yoga", name: "Yoga"))
-            .environmentObject(SelectedSport())
+        SportsView(sportData: SportItem.init(), destination: {
+            
+            DetailsView(sportData: SportItem.init())
+            
+        })
+         
     }
 }
 

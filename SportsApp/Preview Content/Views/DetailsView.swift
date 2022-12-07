@@ -9,32 +9,42 @@ import SwiftUI
 
 struct DetailsView: View {
     
-    let sportData: Sport
-    @EnvironmentObject private var selectedSport: SelectedSport
-    
+    @State var sportData: SportItem = SportItem.init()
+    //    var destination: Destination
+    //
+    //    init(sportData: SportItem, @ViewBuilder destination: (() -> Destination)) {
+    //
+    //        self.sportData = sportData
+    //        self.destination = destination()
+    //    }
     var body: some View {
         
-        VStack {
+        VStack{
+            
             
             Image(sportData.image)
                 .renderingMode(.original)
                 .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 300, height: 300)
-                .edgesIgnoringSafeArea(.top)
+                .aspectRatio(contentMode: .fit)
+            
             
             ExtractedView()
             
             PickerView()
             
-        }.edgesIgnoringSafeArea(.top)
+            
+        }
+        .edgesIgnoringSafeArea(.top)
     }
-  
+    
 }
 
 //struct DetailsView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        DetailsView(sports: <#Sport#>)
+//        DetailsView(sportData: SportItem.placeholder, destination: {
+//
+//             Text("Hello World")
+//        })
 //    }
 //}
 
@@ -49,14 +59,13 @@ struct ExtractedView: View {
             
             Spacer()
             
-            NavigationLink(destination: CardioView()) {
-                
-                Text("More")
-                    .foregroundColor(Color.white)
-                    .padding(11)
-                    .background(Color.black)
-                    .clipShape(Capsule())
-            }
+            
+            Text("More")
+                .foregroundColor(Color.white)
+                .padding(11)
+                .background(Color.black)
+                .clipShape(Capsule())
+            
             
         }.padding(10)
         

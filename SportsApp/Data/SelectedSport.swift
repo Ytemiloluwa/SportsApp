@@ -10,14 +10,14 @@ import SwiftUI
 class SelectedSport: ObservableObject {
     
     @Published
-    var currentSport: Sport?
+    var currentSport: SportItem?
     
     var sportwasSelected: Bool {
         
         currentSport != nil
     }
     
-    func tapSport(sport: Sport) {
+    func tapSport(sport: SportItem) {
         
         if currentSport == sport{
             
@@ -28,7 +28,7 @@ class SelectedSport: ObservableObject {
         }
     }
     
-    func SportSelected(_ sport: Sport) -> Bool {
+    func SportSelected(_ sport: SportItem) -> Bool {
         
         sport == currentSport
     }
